@@ -162,7 +162,7 @@ class WebPageIndexClass:
     #takes in a file and inserts everything to a AVLTree    
     def insertToTree(self):
         
-        file = open(os.getcwd() + '/website/' + self.fileName, 'r') #gets the file from the website folder
+        file = open(os.getcwd() + '/websites/' + self.fileName, 'r') #gets the file from the "websites" folder
         text = file.read()
         
         for ch in text:
