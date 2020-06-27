@@ -1,4 +1,4 @@
-#Syed Azeem Ahmed Quadri | 20052050 | Assignment 3
+#Syed Azeem Ahmed Quadri
 import os #Used for 
 
 class NodeClass:
