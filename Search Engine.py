@@ -38,14 +38,14 @@ class AVLTreeMapClass:
             searchList.append(node.key)
             return self.searchPath(node.left, target, searchList)
 
-    #Ssearches for "taraget" and returns tha value
+    #Searches for "target" and returns that value
     def getValue(self, node, target):
 
         if not node:
 
             return ""
 
-        elif (target == node.key): #targer has been found
+        elif (target == node.key): #target has been found
 
             return node.value
 
@@ -167,7 +167,7 @@ class WebPageIndexClass:
         
         for ch in text:
         
-            if (not ch.isalnum()) and (ch!=" "): #is the character is not an alphanumeric or is not a space
+            if (not ch.isalnum()) and (ch!=" "): #if the character is not an alphanumeric or is not a space
                 text = text.replace(ch, "") #replace that character with "" (
 
                
@@ -243,8 +243,8 @@ def calculate(query, webPage):
     
         return webPage.priority
 
-#PrcoessQueries class        
-class PrcoessQueries:
+#ProcessQueries class        
+class ProcessQueries:
 
     #calls a constructor that makes a empty webPageIndeList
     def __init__(self):
@@ -279,7 +279,7 @@ class PrcoessQueries:
 #Helper function which takes in user query and user limit              
 def searchEngine(query, limit):
         
-    processObj = PrcoessQueries()
+    processObj = ProcessQueries()
     
     processObj.getSearchResults(query, limit)       
 
